@@ -1,0 +1,17 @@
+ <% @codes.each do |code| %>
+      <tr>
+      	<div class = "TLC">
+	        <strong><h3>Title:</h3></strong>
+	        <td><p><%= code.title %></p></td><br/>
+	        <strong><h3>Language:</h3></strong>
+	        <td><p><%= code.language.title %></p></td><br/>
+	        <strong><h3>Content:</h3></strong>
+	        <td><p><%= code.content %></p></td><br/>
+	    </div>
+	        <div class="SED">
+		        <button><td class="show"><%= link_to 'Show', code %></td></button>
+		        <button><td class="edit"><%= link_to 'Edit', edit_code_path(code) %></td></button>
+		        <button><td class="destroy"><%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' } %></td></button>
+	        </div>
+      </tr>
+    <% end %>

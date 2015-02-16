@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class = "TLC">
+
 <p>
-  <strong>Title:</strong>
+  <strong><h3>Title:</h3></strong>
   <%= @code.title %>
 </p>
 
 <p>
-  <strong>Language:</strong>
+  <strong><h3>Language:</h3></strong>
   <%= @code.language.title %>
 </p>
 
 <p>
-  <strong>Content:</strong>
+  <strong><h3>Content:</h3></strong>
   <%= @code.content %>
 </p>
-
+</div>   <!-- TLC close -->
 <%= link_to 'Edit', edit_code_path(@code) %> |
 <%= link_to 'Back', codes_path %>

@@ -10,20 +10,22 @@
       </ul>
     </div>
   <% end %>
-
+<div class="editField">
   <div class="field">
-    <%= f.label :title %><br>
+    <h3><%= f.label :title %></h3><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :language %><br>
-    <%= f.text_field :language %>
+    <h3><%= f.label :language_id %></h3><br>
+    <%= f.text_field :language_id %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
+    <h3><%= f.label :content %></h3><br>
     <%= f.text_area :content %>
   </div>
   <div class="actions">
     <%= f.submit %>
+
   </div>
+</div>
 <% end %>

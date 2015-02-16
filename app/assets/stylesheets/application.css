@@ -13,3 +13,85 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+/* Public stylesheet */
+
+/* Colors
+red:          #993120
+green:        #94B26F
+light green:  #B6D491
+orange:       #FFA148
+dark brown:   #332318
+light brown:  #4C2516
+yellowish:    #FFBA26
+*/
+body {
+	background-color: #5BB28B;
+	text-align: center;
+}
+
+
+h1{
+	color: #B4FFDD;
+}
+
+h3{
+	margin: 0px 0px 0px 0px;
+	color: #B4FFDD;
+	text-decoration: none;
+
+}
+
+p{
+	margin: 0px 0px 0px 0px;
+}
+
+.TLC{
+	margin-top: 75px;
+	max-height: 400px;
+	max-width: 400px;
+	margin-left: 500px;
+	text-align: left;
+}
+
+.SED a{
+	background-color:#B4FFDD;
+	text-decoration: none;
+	color:#5BB28B;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:18px;
+/*	line-height:30px;
+*/
+}
+
+.subjects a{
+	color: #9BFFD0;
+	text-decoration: none;
+
+}
+
+a:hover {
+    color: white;
+    background-color: none;
+}
+
+button{
+	background-color:#B4FFDD;
+	border: 0;
+
+}
+
+
+.editField{
+	text-align: left;
+	margin-top: 75px;
+	margin-left: 660px;
+}
+
+
+
+table th{
+text-align: center;
+}

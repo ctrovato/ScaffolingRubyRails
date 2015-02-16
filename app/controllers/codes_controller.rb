@@ -4,7 +4,7 @@ class CodesController < ApplicationController
   # GET /codes
   # GET /codes.json
   def index
-    @codes = Code.all
+    @languages = Language.all
   end
 
   # GET /codes/1
@@ -19,6 +19,11 @@ class CodesController < ApplicationController
 
   # GET /codes/1/edit
   def edit
+     @languages = Language.where(:language => params[:title])
+  end
+
+  def content
+    @codes = Code.where(:language => params[:id])
   end
 
   # POST /codes
