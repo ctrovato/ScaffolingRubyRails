@@ -19,7 +19,7 @@ class CodesController < ApplicationController
 
   # GET /codes/1/edit
   def edit
-     @languages = Language.where(:language => params[:title])
+     @languages = Language.where(:language => params[:id])
   end
 
   def content
