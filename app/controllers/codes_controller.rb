@@ -19,7 +19,7 @@ class CodesController < ApplicationController
 
   # GET /codes/1/edit
   def edit
-     @languages = Language.where(:language => params[:id])
+    @languages = Language.where(:language => params[:id])
   end
 
   def content
@@ -34,7 +34,7 @@ class CodesController < ApplicationController
     respond_to do |format|
       if @code.save
         format.html { redirect_to @code, notice: 'Code was successfully created.' }
-        format.json { render :show, status: :created, location: @code }
+        format.json { render :show, status: :created, location: @code.language_id }
       else
         format.html { render :new }
         format.json { render json: @code.errors, status: :unprocessable_entity }
@@ -48,7 +48,7 @@ class CodesController < ApplicationController
     respond_to do |format|
       if @code.update(code_params)
         format.html { redirect_to @code, notice: 'Code was successfully updated.' }
-        format.json { render :show, status: :ok, location: @code }
+        format.json { render :show, status: :ok, location: @code.language_id }
       else
         format.html { render :edit }
         format.json { render json: @code.errors, status: :unprocessable_entity }

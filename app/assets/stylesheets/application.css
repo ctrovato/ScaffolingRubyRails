@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require_bootstrap-theme.min.css
  *= require_self
  */
 
@@ -69,6 +70,12 @@ p{
 .subjects a{
 	color: #9BFFD0;
 	text-decoration: none;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:18px;
+	line-height:30px;
+	width:120px;
+	height:32px
 
 }
 
